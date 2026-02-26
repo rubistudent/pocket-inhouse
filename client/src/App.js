@@ -10,6 +10,7 @@ import CustomerDashboard from "./pages/Customer/CustomerDashboard";
 import Booking from "./pages/Customer/Booking";
 import Profile from "./pages/Customer/Profile";
 import Progress from "./pages/Customer/Progress";
+import Hotels from "./pages/Customer/Hotels";
 import Bookings from "./pages/Staff/Bookings";
 import Clients from "./pages/Staff/Clients";
 import DashboardHome from "./pages/Staff/DashboardHome";
@@ -101,6 +102,7 @@ export default function App() {
               }
             >
               <Route path="booking" element={<Booking />} />
+              <Route path="hotels" element={<Hotels />} />
               <Route path="progress" element={<Progress />} />
               <Route path="profile" element={<Profile />} />
             </Route>

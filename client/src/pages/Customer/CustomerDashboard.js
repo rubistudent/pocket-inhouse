@@ -40,6 +40,19 @@ export default function CustomerDashboard() {
             </NavLink>
 
             <NavLink
+              to="/customer/hotels"
+              className={({ isActive }) =>
+                `flex items-center space-x-3 px-6 py-2.5 text-sm font-medium rounded-r-full transition-all ${
+                  isActive
+                    ? "bg-yellow-600 text-white shadow-md"
+                    : "text-gray-700 hover:bg-yellow-50 hover:text-yellow-700"
+                }`
+              }
+            >
+              <FaPlaneDeparture size={18} /> <span>Hotels</span>
+            </NavLink>
+
+            <NavLink
               to="/customer/progress"
               className={({ isActive }) =>
                 `flex items-center space-x-3 px-6 py-2.5 text-sm font-medium rounded-r-full transition-all ${

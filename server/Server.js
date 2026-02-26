@@ -9,6 +9,7 @@ import bookingsRoutes from "./routes/bookings.js";
 import rolesRoutes from "./routes/roles.js";
 import usersRoutes from "./routes/users.js";
 import packageRoutes from "./routes/packages.js";
+import liteRoutes from "./routes/lite.js";
 
 dotenv.config();
 
@@ -27,6 +28,7 @@ app.use("/api/bookings", bookingsRoutes);
 app.use("/api/packages", packageRoutes);
 app.use("/api/roles", rolesRoutes);
 app.use("/api/users", usersRoutes);
+app.use("/api/lite", liteRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);

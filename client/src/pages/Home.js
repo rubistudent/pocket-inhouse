@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import TopBar from "../components/organisms/TopBar";
 import Header from "../components/organisms/Header";
+import HotelsSearch from "../components/HotelsSearch";
+import LocalHotels from "../components/LocalHotels";
 import heroImage from "../assets/lik.jpg";
 
 export default function Home() {
@@ -87,6 +89,17 @@ export default function Home() {
       </section>
 
       {/* ======= FEATURED TOURS ======= */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <HotelsSearch />
+        </div>
+      </section>
+
+      <section className="py-6 bg-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <LocalHotels />
+        </div>
+      </section>
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h3 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
